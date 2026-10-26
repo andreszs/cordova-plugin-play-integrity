@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-play-integrity"
+        version="1.0.0">
+    <name>Play Integrity</name>
+    <description>A modern Cordova plugin for Google Play Integrity API standard requests.</description>
+    <license>MIT</license>
+    <keywords>cordova,android,play integrity,attestation,security</keywords>
+    <repo>https://github.com/andreszs/cordova-plugin-play-integrity</repo>
+    <issue>https://github.com/andreszs/cordova-plugin-play-integrity/issues</issue>
+
+    <engines>
+        <engine name="cordova-android" version=">=12.0.0" />
+    </engines>
+
+    <js-module src="www/play-integrity.js" name="PlayIntegrity">
+        <clobbers target="cordova.plugins.playIntegrity" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PlayIntegrity">
+                <param name="android-package"
+                       value="io.github.andreszs.cordova.playintegrity.PlayIntegrityPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/PlayIntegrityPlugin.java"
+                     target-dir="src/io/github/andreszs/cordova/playintegrity" />
+
+        <framework src="com.google.android.play:integrity:1.6.0" />
+    </platform>
+</plugin>

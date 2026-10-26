@@ -1,0 +1,49 @@
+{
+  "name": "cordova-plugin-play-integrity",
+  "version": "1.0.0",
+  "description": "A modern Cordova plugin for Google Play Integrity API standard requests.",
+  "cordova": {
+    "id": "cordova-plugin-play-integrity",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "android",
+    "play-integrity",
+    "attestation",
+    "security"
+  ],
+  "homepage": "https://github.com/andreszs/cordova-plugin-play-integrity#readme",
+  "bugs": {
+    "url": "https://github.com/andreszs/cordova-plugin-play-integrity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreszs/cordova-plugin-play-integrity.git"
+  },
+  "license": "MIT",
+  "author": "andreszs",
+  "main": "www/play-integrity.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "src/",
+    "types/",
+    "www/",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "plugin.xml"
+  ],
+  "scripts": {
+    "test": "node --test tests",
+    "pack:check": "npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
