@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-play-integrity",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A modern Cordova plugin for Google Play Integrity API standard requests.",
   "cordova": {
     "id": "cordova-plugin-play-integrity",

@@ -4,6 +4,9 @@ A modern Cordova plugin for the [Google Play Integrity API](https://developer.an
 
 The plugin is intentionally a thin bridge to Google's official Android library. It prepares a standard integrity token provider, requests tokens bound to a `requestHash`, and optionally presents Google's remediation dialogs. Integrity verdicts must always be decoded and enforced by a trusted backend.
 
+> [!WARNING]
+> This plugin is under active development. Its JavaScript API, native implementation, supported Cordova versions, error model, and remediation behavior may change before the first stable release. Test every upgrade in a Play Console test track before using it to enforce production access. Do not treat a successful client-side call as an integrity verdict; decoding and policy enforcement belong on a trusted backend.
+
 ## Features
 
 - Standard requests using `StandardIntegrityManager`
@@ -32,7 +35,7 @@ cordova plugin add cordova-plugin-play-integrity
 Directly from a tagged GitHub release:
 
 ```bash
-cordova plugin add https://github.com/andreszs/cordova-plugin-play-integrity.git#v1.0.0
+cordova plugin add https://github.com/andreszs/cordova-plugin-play-integrity.git#v0.1.0
 ```
 
 ## Usage
